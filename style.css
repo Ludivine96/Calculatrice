@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #a9d4db, #edb4d3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 50px;
+  }
+
+  form {
+    background-color: #a9d4db;
+    border-radius: 20px;
+    border:8px solid #edb4d3;
+    width: 500px;
+    height: 525px;
+    font-size: 1.2em;
+  }
+  
+  
+  /* Conteneur principal */
+  .container {
+    background: linear-gradient(135deg, #191315, #f9f5f0);
+    border: 4px solid #a9e9d1;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Titre */
+  .container p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000806;
+    margin-bottom: 20px;
+  }
+  
+  /* Écran de calcul */
+  .affichage {
+    background: #edb4d3;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.03);
+  }
+  
+  .affichage h4 {
+    font-size: 1rem;
+    color: #c60f5b;
+    margin: 0;
+  }
+  
+  .affichage h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    color: #cb0856;
+  }
+  
+  /* Boutons */
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background: hsl(55, 55%, 82%);
+    color: #5c3a45;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+  
+  button:hover {
+    background: #e2e79d;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background: #d6d167;
+    transform: scale(0.98);
+  }
+  
+  /* Boutons spéciaux */
+  .btn-total {
+    background-color: #a9e9d1;
+    color: #30423a;
+    font-weight: bold;
+  }
+  
+  .btn-total:hover {
+    background-color: #a0dbc6;
+  }
+  
+  .btn-total:active {
+    background-color: #8bcab5;
+  }
+  
+  /* Espacement des boutons */
+  .row > div {
+    margin-bottom: 5px;
+  }
+  
+  /* Espacement horizontal dans les colonnes */
+  .col-2, .col-3, .col-4, .col-10, .col-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px 15px;
+    }
+  
+    .affichage h1 {
+      font-size: 1.8rem;
+    }
+  
+    .affichage h4 {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
